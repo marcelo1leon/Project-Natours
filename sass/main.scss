@@ -1,0 +1,75 @@
+/*
+Responsive Design
+* Works in all devices and screen sizes
+- Fluid layouts
+- Media Queries
+- Responsive Images
+- Correct Units
+- Desktop-first vs Mobile-first
+
+
+* Maintainable and scalable code
+- clean
+- easy-to-understand
+- growth
+- reusable
+- how to organize files
+- how to name classes
+- how to structure HTML
+
+* Web performance
+- faster and smaller
+- less http request
+- less code
+- use CSS preprocessor
+- less images <-
+- compress images
+
+Load HTML -> parse HTML -> Document Objetc Model (DOM)
+                        -> load CSS -> parse CSS -> resolve conflicting CSS declarations (cascade)
+                                                 -> Process final CSS values -> CSS Object Model (CSSOM)
+
+DOM + CSSOM = Render Tree -> website rendering: the visual formating model -> final redered website
+
+npm commands
+compile: npn run compile:sass
+live server: live-server
+
+
+*/
+
+
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485 
+
+*/
+
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/functions";
+
+
+@import "base/base";
+@import "base/animations";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/button";
+@import "components/composition";
+@import "components/feature-box";
+@import "components/card";
+@import "components/story.scss";
+@import "components/bg-video";
+@import "components/form";
+@import "components/popup";
+
+@import "layout/header";
+@import "layout/grid";
+@import "layout/footer";
+@import "layout/navigation";
+
+@import "pages/home";
